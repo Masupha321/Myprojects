@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>task3</title>
+            </head>
+            <style>
+                
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    text-align: center;
+                    font-family: Arial, sans-serif; 
+                }
+
+                body {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 100vh;
+                    background-color: #f8f8f8;
+                }
+
+                .container {
+                    width: 700px;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    gap: 10px;
+                }
+
+
+
+
+                header, nav, section, article, aside, footer {
+                    font-size: 24px;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                header {
+                    background-color: #8ed2f5;
+                    height: 80px;
+                    width: 100%;
+                }
+
+                nav  {
+                    background-color: #f4ad7c; 
+                    width: 100%;
+                    height: 60px;
+                    margin-top: 10px;
+                }
+
+                main {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: auto auto;
+                    gap: 10px;
+                    margin-top: 10px;
+                }
+
+                .content-left {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+
+                .content-right {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                
+
+                section  {
+                    background-color: #a7d47d;
+                    grid-column: 1;
+                    height: 305px;
+                    width: 480px;
+                }
+
+                article {
+                    background-color: #c59aa6;
+                    grid-column: 1;
+                    height: 309px;
+                }
+
+                aside {
+                    background-color: #f6f79a;
+                    grid-column: 2;
+                    grid-row: span 2;
+                    height: 310px;
+                }
+
+                footer  {
+                    background-color: #f58241;
+                    width: 100%;
+                    height: 80px;
+                    margin-top: 10px;
+                }
+
+            </style>
+
+            <body>
+                <header><h1>&lt;header&gt;</h1></header>
+                <nav><h1>&lt;nav&gt;</h1></nav>
+
+                <main>
+                <div class="main-content">
+                    <div class="content-left">
+                    <section><h1>&lt;section&gt;</h1></section>
+                    <article><h1>&lt;article&gt;</h1></article>
+                    </div>
+
+                    <div class="content-right">
+                    <aside><h1>&lt;aside&gt;</h1></aside>
+                    </div>
+                </div>
+                </main>
+                </div>
+
+                <footer><h1>&lt;footer&gt;</h1></footer>
+
+            </body> 
+    </html>
