@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Task4</title>
+        </head>
+        <style>
+            body {
+                font-family: Arial,sans-serif;
+                background-color: #f8f9fa;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            .outer-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+            }
+
+            .form-container {
+                background-color: #fff;
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                width: 700px;
+            }
+
+            h2 {
+                margin-bottom: 20px;
+                font-size: 20px;
+            }
+
+            h3 {
+                font-size: 16px;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            input, textarea, select {
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 14px;
+                width: 200px;
+            }
+
+            textarea {
+                height: 40px;
+                resize: none;
+            }
+
+            input:focus, textarea:focus {
+                border-color: #007bff;
+                outline: none;
+            }
+
+            input.active, textarea.active {
+                border-color: #007bff;
+                outline: none;
+            }
+
+            input.error, textarea.error {
+                border-color: #dc3545;
+                background: #f8d7da;
+                color: #721c24;
+            }
+
+            input.filled, textarea.filled {
+                background: #e9ecef;
+            }
+
+            input[disabled], textarea[disabled] selectt[disabled] {
+                background: #e9ecef;
+                cursor: not-allowed;
+            }
+
+            .input-group {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+
+            .input-group span {
+                background: #e9ecef;
+                padding: 10px;
+                border-radius: 5px;
+            }
+
+            select.open {
+                background: #007bff;
+                color: white;
+            }           
+        </style>
+
+        <body>
+            <div class="outer-container">
+                <div class="form-container">
+                    <h2>Form Fields</h2>
+
+                    <section>
+                        <h3>Arrangements</h3>
+                        <div class="row">
+                            <input type="text" placeholder="Eg Placehholder">
+                            <textarea placeholder="Text"></textarea>
+                            <select>
+                                <option>Eg Placeholder</option>
+                            </select>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h3>Field Overrides</h3>
+                        <div class="row">
+                            <input type="text" value="Default" disabled>
+                            <input type="text" value="Active/Focused" class="active">
+                            <input type="text" value="Error" class="error">
+                            <input type="text" value="Filled" class="filled">
+                            <input type="text" value="Disabled" disabled>
+                            <input type="text" value="Read Only" readonly>
+                            <div class="input-group">
+                                <span>€</span>
+                                <input type="text" value="With Prefix">
+                            </div>
+
+                            <div class="input-group">
+                                <input type="text" value="With Suffix">
+                                <span>Show</span>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" value="With Icon">
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h3>Dropdown Overrides</h3>
+                        <div class="row">
+                            <select disabled>
+                                <option>Default</option>
+                            </select>
+                            <select class="open">
+                                <option>Dropdown Open</option>
+                                <option>Option 1</option>
+                                <option selected>Option2</option>
+                                <option>Option 3</option>
+                            </select>
+                            <select>
+                                <option>Filled</option>
+                            </select>
+                            <select disabled>
+                                <option>Disabled</option>
+                            </select>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </body>
+    </html>
