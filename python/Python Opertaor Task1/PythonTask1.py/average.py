@@ -10,7 +10,8 @@ def main():
         average = calculate_average(num1, num2, num3, num4)
         print(f"The average of the numbers is:, {average}")
     except ValueError:
-        print("Please enter a valid numbers.")
+        print("Invalid input. Please enter numbers only.")
 
     if __name__ == "__main__":
         main()
+        
