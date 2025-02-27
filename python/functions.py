@@ -6,4 +6,3 @@ def sort_characters(input_string):
 
 def isLongerThan5(S):
     return len(S) > 5
-if __name__ == '__main__':
