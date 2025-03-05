@@ -1,5 +1,7 @@
-def print_day_of_week(day_number):
-    match day_number:
+def print_day_of_week(): # function definition
+    day = int(input("Enter the number of days: "))
+
+    match day:
         case 1:
             print("The day is Monday")
         case 2:
@@ -16,4 +18,5 @@ def print_day_of_week(day_number):
             print("The day is Sunday")
         case _:
             print("Invalid input! Please enter a valid number between 1 and 7")
-            
+
+print_day_of_week() # function call
