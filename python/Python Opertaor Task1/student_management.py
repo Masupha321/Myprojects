@@ -23,7 +23,7 @@ class StudentManagementSystem:
         if any(student.student_id == student_id for student in self.students):
             print("Error: Student ID already exists!")
             return
-        student = Student(student_name, student_id)  # Corrected instantiation
+        student = Student(student_name, student_id) 
         self.students.append(student)
         print("Student added successfully!")
 
@@ -83,8 +83,6 @@ class StudentManagementSystem:
                 break
             else:
                 print("Invalid choice! Please enter a valid option between 1 and 5.")
-
-
 
 
 StudentManagementSystem.main()
