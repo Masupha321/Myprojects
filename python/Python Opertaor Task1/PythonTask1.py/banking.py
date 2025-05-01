@@ -62,7 +62,6 @@ def start():
                         break
                     case _:
                         print("Invalid choice. Please select a valid option.")
-
 start() # function call
 
 
